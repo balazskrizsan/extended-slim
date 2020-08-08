@@ -1,0 +1,34 @@
+{
+    "name": "professionhu/extended-slim",
+    "description": "A customized Slim framework",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "slim/slim": "^3.1",
+        "monolog/monolog": "^1.17",
+        "php-di/slim-bridge": "^1.1",
+        "doctrine/dbal": "^2.6",
+        "vlucas/phpdotenv": "^2.4",
+        "robmorgan/phinx": "^0.10.6",
+        "symfony/validator": "^4.0",
+        "symfony/translation": "^4.0",
+        "marc-mabe/php-enum": "^3.0",
+        "graylog2/gelf-php": "^1.5",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=6.0"
+    },
+    "autoload": {
+        "files": [
+            "src/ExtendedSlim/Helpers.php"
+        ],
+        "psr-4": {
+            "ExtendedSlim\\": "src/ExtendedSlim/",
+            "ExtendedSlim\\Tests\\": "tests/"
+        }
+    }
+}
